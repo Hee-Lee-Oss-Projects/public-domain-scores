@@ -1,0 +1,36 @@
+{
+  "id": "public-domain-scores-rights-001",
+  "title": "Three-layer rights decision tree + jurisdiction stance",
+  "project": "public-domain-scores",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["open-music", "public-domain", "culture-heritage", "copyright", "accessibility"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "public-domain-scores transcribes verified public-domain sheet music into open structured formats (MusicXML canonical; MIDI/MEI derived). A single score carries up to three independent rights: the composition, the specific edition/typographical arrangement, and the scan/digitisation. Treating 'is it old?' as the only test would publish still-protected modern engravings or in-copyright lyrics. No work may be transcribed until rights are proven and recorded. No partner/steward is yet secured. See PLAN.md (Data, licensing & compliance).",
+  "objective": "Produce the rights decision tree and jurisdiction stance the License/rights reviewer applies to every work: the three layers (composition, edition/typographical, scan), the per-jurisdiction term tests (US pre-1929 + life+70; EU life+70 + critical/editio-princeps rights; Canada life+50; UK CDPA s.15 25-year typographical right), the 'strictest reasonable {US, EU, source}' default stance, the lyrics/translation-as-separate-layer rule, and the 'doubt = exclude' posture with a recorded reviewer sign-off step.",
+  "acceptanceCriteria": [
+    "All three rights layers documented with the test applied and the evidence each requires.",
+    "Per-jurisdiction term table included (US pre-1929/life+70, EU life+70 + critical/editio princeps, Canada life+50, UK CDPA s.15 typographical 25yr).",
+    "Default 'strictest reasonable {US, EU, source}' stance adopted and recorded per work.",
+    "In-copyright lyrics/translations handled as a distinct rights layer (excluded or stripped).",
+    "Scan-rights position grounded in Bridgeman v. Corel and EU DSM Directive Art. 14, with a no-re-hosting-of-source-scans rule.",
+    "Defines the rights-reviewer sign-off step that must complete before any transcription begins, and the 'doubt = exclude' rule.",
+    "Output is machine-actionable: each layer maps to a field in the provenance schema (public-domain-scores-prov-001)."
+  ],
+  "resources": [
+    "planning/projects/public-domain-scores/PLAN.md",
+    "packages/schema/src/schemas.ts",
+    "docs/good-deed-definition.md",
+    "https://www.w3.org/2021/06/musicxml40/",
+    "https://imslp.org/wiki/IMSLP:Copyright_Made_Simple"
+  ],
+  "output": "A rights-determination specification document (docs/rights-policy.md) defining the three-layer decision tree, the per-jurisdiction term table, the jurisdiction stance, the lyrics layer rule, and the reviewer sign-off gate, committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC0-1.0"
+}

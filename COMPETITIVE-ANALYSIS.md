@@ -215,7 +215,7 @@ metered spend, so Claude usage is the contributor's own interactive agent.
 
 - **Shared rights-gate engine with `loc-public-domain-engine` and `revolutionary-patriots-kg`.** The
   three-layer determination + machine-readable provenance + jurisdiction tree is the *same pattern*.
-  Extract it as a reusable Elyos module (`rights-gate`) so music, LoC texts, and the patriots KG share
+  Extract it as a reusable Hee-Lee Oss module (`rights-gate`) so music, LoC texts, and the patriots KG share
   one audited engine — multiplies the value of getting it right once.
 - **`world-folktales-open` tie-in.** PD folk *tunes* (melody + the folktale text) — a natural joint
   corpus: our engraved melody + their narrative, both CC0, cross-linked. Backlog `data-004`
@@ -229,7 +229,7 @@ metered spend, so Claude usage is the contributor's own interactive agent.
 - **An MCP server over the corpus.** Expose incipit/melodic search (backlog `search-001`),
   transposition, and part-extraction as MCP tools so any agent can query "give me a CC0 SATB setting
   of X transposed down a third as MusicXML" — turning the corpus into queryable infrastructure and a
-  flagship for the broader Elyos MCP story.
+  flagship for the broader Hee-Lee Oss MCP story.
 - **`a11y-alttext-commons` cross-feed.** Braille/large-print rendering expertise and reviewers overlap
   with the accessibility-alt-text effort; share the a11y reviewer pool and tooling.
 

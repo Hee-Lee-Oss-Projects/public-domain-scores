@@ -28,7 +28,7 @@ public-domain scores into structured, semantic music encodings:
   long-term preservation.
 
 The hard part is **not** the conversion — usable open tools exist (Audiveris OMR, music21,
-Verovio, MuseScore). The hard part, and the reason this is an *Elyos* project rather than a
+Verovio, MuseScore). The hard part, and the reason this is an *Hee-Lee Oss* project rather than a
 weekend script, is **rigour**: (1) proving each score is genuinely free to redistribute as a
 derivative — which is a *three-layer* rights question, not a single "is it old?" check — and
 (2) proving each transcription is musically *faithful*, not plausible-looking OMR garbage. Both
@@ -210,7 +210,7 @@ run until the gate before it passes.
 - **Canonical format:** **MusicXML** (the interchange lingua franca). MIDI and MEI are *derived*
   from the verified MusicXML so all three stay consistent.
 - **Engine-agnostic OMR seam:** the OMR step lives behind a thin adapter so the engine
-  (Audiveris now) can be swapped without touching the pipeline. (Mirrors the Elyos
+  (Audiveris now) can be swapped without touching the pipeline. (Mirrors the Hee-Lee Oss
   "agent-neutral core, vendor logic in adapters" rule.)
 - **Provenance format:** machine-readable sidecar per work (`<work>.provenance.json`, JSON
   Schema-defined), versioned with the encoding; **no encoding ships without it.**
@@ -234,7 +234,7 @@ run until the gate before it passes.
   **ABC** for manuscript or simple works where direct human encoding beats OMR.
 - **Accessibility:** an open MusicXML→braille path (e.g. **FreeDots**/**Braille Music** family of
   tools) producing **BRF**; large-print via Verovio re-rendering at scale.
-- **Project tooling:** TypeScript/ESM, pnpm (Elyos conventions) for the CLI/CI glue and catalog;
+- **Project tooling:** TypeScript/ESM, pnpm (Hee-Lee Oss conventions) for the CLI/CI glue and catalog;
   Python invoked as a subprocess for music21/Audiveris steps behind the adapter.
 - **CI:** GitHub Actions running XSD validation, provenance-completeness linter, allowlist check,
   round-trip tests, and `pnpm build && pnpm test && pnpm lint`.
@@ -394,7 +394,7 @@ is transcribed.
 ## Work breakdown
 
 The itemized, schema-mapped backlog lives in [`TASKS.md`](./TASKS.md): ~18 tasks across M0–M3,
-each becoming an Elyos Task JSON (validated against `packages/schema/src/schemas.ts`) with
+each becoming a Hee-Lee Oss Task JSON (validated against `packages/schema/src/schemas.ts`) with
 acceptance criteria and a per-milestone Definition of Done. Highlights: M0 rights/provenance/CI
 spine (7 tasks), M1 first verified slice (4), M2 tooling + accessibility + catalog (4), M3 scale +
 adoption + sustainability (3). A sized, unscheduled backlog follows.
@@ -425,7 +425,7 @@ the M3 sustainability task.
   (GPL), FluidSynth + open soundfont, a MusicXML→BRF braille tool, the MusicXML XSD.
 - **Source repositories:** IMSLP, Mutopia, OpenScore, Library of Congress / Internet Archive,
   Wikimedia Commons (all per-item licence-verified).
-- **Elyos pieces:** the Task schema (`packages/schema`), the CLI workspace/PR flow
+- **Hee-Lee Oss pieces:** the Task schema (`packages/schema`), the CLI workspace/PR flow
   (`packages/cli`), CI/governance workflows, the agent-instructions/refusal guardrails.
 - **Upstream standards:** MusicXML (W3C Music Notation CG), MEI (Music Encoding Initiative),
   Standard MIDI.
@@ -455,7 +455,7 @@ the M3 sustainability task.
 ## Security & privacy
 
 - **Threat surface is small** (static files + a no-account catalog), but: never write source ToS
-  credentials, tokens, or keys into logs/provenance/commits (Elyos rule).
+  credentials, tokens, or keys into logs/provenance/commits (Hee-Lee Oss rule).
 - **No PII collected.** No accounts, no tracking on the catalog; contributor handles published only
   with consent.
 - **Abuse/misuse prevention:** the refusal guardrails apply — refuse any request to launder
@@ -501,7 +501,7 @@ the M3 sustainability task.
 
 ## References
 
-- Elyos: `CLAUDE.md`, `docs/good-deed-definition.md`, `packages/schema/src/schemas.ts`,
+- Hee-Lee Oss: `CLAUDE.md`, `docs/good-deed-definition.md`, `packages/schema/src/schemas.ts`,
   `planning/ROADMAP.md` (Track 5 — Culture & heritage).
 - Sibling plans (pattern reuse): `planning/projects/revolutionary-patriots-kg/{PLAN,TASKS}.md`
   (three-layer rights/provenance gate), `loc-public-domain-engine` (rights-gate engine).
@@ -539,7 +539,7 @@ Twenty-five specific improvements made to the draft above (each already applied 
     independent error-detection channels.
 11. **MusicXML chosen as canonical with MIDI/MEI derived from it**, guaranteeing the three formats
     stay mutually consistent instead of drifting.
-12. **Engine-agnostic OMR adapter** (mirrors Elyos "vendor logic in adapters") so the OMR engine is
+12. **Engine-agnostic OMR adapter** (mirrors Hee-Lee Oss "vendor logic in adapters") so the OMR engine is
     a swappable resource, not the product.
 13. **Provenance JSON Schema as a hard CI gate** — no encoding ships without a complete sidecar;
     the countable unit (verification record) is defined so the 100% metric is checkable.

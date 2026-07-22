@@ -7,9 +7,9 @@ formats (MusicXML canonical; MIDI + MEI derived) with full provenance and access
 derivatives. See [`PLAN.md`](./PLAN.md) for positioning, the three-layer rights gate, the accuracy
 bar, and the roadmap (M0–M3).
 
-## How these tasks map to Elyos
+## How these tasks map to Hee-Lee Oss
 
-Each task below becomes an Elyos **Task JSON** validated against `packages/schema/src/schemas.ts`.
+Each task below becomes a Hee-Lee Oss **Task JSON** validated against `packages/schema/src/schemas.ts`.
 Field mapping:
 
 - **id** — stable `public-domain-scores-<area>-NNN` (the table ID).
